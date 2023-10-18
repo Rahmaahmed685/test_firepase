@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "956975992699",
+    "project_id": "test-a21ee",
+    "storage_bucket": "test-a21ee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:956975992699:android:59bdb4c82563d2c3f877de",
+        "android_client_info": {
+          "package_name": "com.rahmaahmed.test_firepase.test_firepase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrNdZFnd20ajhyTmUuKyCMxdCY71EtTQg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
