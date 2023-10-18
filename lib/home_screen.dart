@@ -6,7 +6,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:test_firepase/add_new_screen.dart';
-import 'package:test_firepase/edit_note.dart';
+import 'package:test_firepase/edit_note_screen.dart';
 import 'package:test_firepase/login.dart';
 import 'package:test_firepase/note.dart';
 import 'package:test_firepase/profile_screen.dart';

@@ -6,16 +6,16 @@ import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:test_firepase/note.dart';
-class Edit extends StatefulWidget {
-  const Edit({super.key, required this.note});
+class EditNoteScreen extends StatefulWidget {
+  const EditNoteScreen({super.key, required this.note});
 
   final Note note;
 
   @override
-  State<Edit> createState() => _EditState();
+  State<EditNoteScreen> createState() => _EditNoteScreenState();
 }
 
-class _EditState extends State<Edit> {
+class _EditNoteScreenState extends State<EditNoteScreen> {
   final titleController = TextEditingController();
   final contentController = TextEditingController();
 
