@@ -40,6 +40,7 @@ class _EditNoteScreenState extends State<EditNoteScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Edit Note"),
+        backgroundColor: Colors.blue,
       ),
       body: Padding(
         padding: const EdgeInsets.all(12),
@@ -105,6 +106,8 @@ class _EditNoteScreenState extends State<EditNoteScreen> {
                 width: double.infinity,
                 child: ElevatedButton(
                   onPressed: () => updateNote(),
+                  style: ElevatedButton.styleFrom(backgroundColor: Colors.blue,
+                  ),
                   child: const Text("Update"),
                 ),
               ),

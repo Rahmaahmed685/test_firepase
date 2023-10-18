@@ -32,6 +32,7 @@ class _AddNoteScreenState extends State<AddNoteScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Add Note"),
+        backgroundColor: Colors.blue,
       ),
       body: Padding(
         padding: const EdgeInsets.all(12),
@@ -48,7 +49,7 @@ class _AddNoteScreenState extends State<AddNoteScreen> {
                   child:
                   Container(
                     color: Colors.blue,
-                    height: 100,
+                    height: 150,
                     width: double.infinity,
                     child: Icon(
                       Icons.photo_library_outlined,
@@ -61,13 +62,16 @@ class _AddNoteScreenState extends State<AddNoteScreen> {
                 Stack(
                   alignment: Alignment.center,
                   children: [
-                    InkWell(
-                      borderRadius: BorderRadius.circular(50),
-                      onTap: () => pickImage(),
-                      child: Image.network(
-                        imageUrl,
-                        height: 100,
-                        width: double.infinity,
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: InkWell(
+                        borderRadius: BorderRadius.circular(50),
+                        onTap: () => pickImage(),
+                        child: Image.network(
+                          imageUrl,
+                          height: 150,
+                          width: double.infinity,
+                        ),
                       ),
                     ),
                     Visibility(
@@ -115,6 +119,7 @@ class _AddNoteScreenState extends State<AddNoteScreen> {
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(backgroundColor: Colors.blue),
                   onPressed: () => addNote(),
                   child: const Text("Add"),
                 ),
